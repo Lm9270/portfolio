@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Download } from "lucide-react";
 
 const alfa = Alfa_Slab_One({ weight: '400', subsets: ['latin'], });
-const manrope = Manrope({});
+const manrope = Manrope({subsets: ['latin']});
 
 const documents = [
   {
