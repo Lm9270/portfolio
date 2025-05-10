@@ -6,8 +6,8 @@ import { Alfa_Slab_One, Manrope } from "next/font/google";
 import Articles from "@/components/articles";
 import Outils from "@/components/outils";
 
-const alfa = Alfa_Slab_One({ weight: '400' });
-const manrope = Manrope({});
+const alfa = Alfa_Slab_One({ weight: '400' , subsets: ['latin'],});
+const manrope = Manrope({subsets: ['latin']});
 
 function Page() {
   return (
