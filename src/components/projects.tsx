@@ -19,7 +19,7 @@ function Projects() {
           {
             title: "ICGO",
             imageSrc: "/images/cardCover/cardICGO.jpg",
-            href: "Gsb",
+            href: "Icgo",
           },
           {
             title: "Ami des animaux",

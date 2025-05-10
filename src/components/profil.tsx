@@ -76,6 +76,8 @@ function Profil() {
             <Image
               src="/images/Liam.jpg"
               alt="Photo de profil"
+              width={100}
+              height={100}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-md object-cover"
             />
             <div>
@@ -101,7 +103,7 @@ function Profil() {
                   <strong>Téléphone :</strong> <FaPhone className="inline" /> 07
                   84 68 95 25
                 </p>
-              <a href="#contact" className="not-md:self-center">
+              <a href="/#contact" className="not-md:self-center">
                 <Button className="text-xl font-blod mt-4 bg-gray-200 text-black border-1 border-black hover:text-blue-500 hover:border-blue-500 hover:bg-gray-200 active:bg-gray-600">
                   Me contacter
                 </Button>
@@ -283,6 +285,8 @@ function Profil() {
                     <Image
                       src={tech.src}
                       alt={tech.alt}
+                      width={100}
+                      height={100}
                       className="w-full h-full object-contain"
                       loading="lazy"
                     />

@@ -14,6 +14,8 @@ function Page() {
   return (
     <div className="min-h-screen text-white relative mt-10">
       <Image
+        width={100}
+        height={100}
         src="/images/gifs/fondVeille.gif"
         alt="fond-écrans"
         className="w-full h-full fixed object-cover z-[-10]"

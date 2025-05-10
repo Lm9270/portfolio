@@ -40,7 +40,7 @@ function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <a href="Portfolio">
-            <Image src="/images/logoLM.png" alt="Logo" className="h-14" />
+            <Image src="/images/logoLM.png" alt="Logo" className="h-14" width={90} height={90}/>
           </a>
           <span className="text-xl text-white font-semibold">
             Portfolio de Liam MORICONI
@@ -49,13 +49,13 @@ function Navbar() {
 
         <div className="hidden md:flex gap-6 text-gray-700 font-medium">
           <a
-            href="Portfolio#profil"
+            href="/#profil"
             className="text-white hover:text-blue-300 transition"
           >
             Profil
           </a>
           <a
-            href="Portfolio#projet"
+            href="/#projet"
             className="text-white hover:text-blue-300 transition"
           >
             Projets
@@ -73,7 +73,7 @@ function Navbar() {
             Diplômes / attestations
           </a>
           <a
-            href="Portfolio#contact"
+            href="/#contact"
             className="text-white hover:text-blue-300 transition"
           >
             Contact
@@ -91,31 +91,31 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-custom-gradient2 border-t shadow-md p-4 flex flex-col items-center gap-4">
           <a
-            href="#profil"
+            href="/#profil"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             À propos de moi
           </a>
           <a
-            href="#project"
+            href="/#projet"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Projets
           </a>
           <a
-            href="#project"
+            href="Veille"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Veille Informationnelle
           </a>
           <a
-            href="#project"
+            href="Documents"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Diplômes / attestations
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Contact

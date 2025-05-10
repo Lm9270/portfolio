@@ -10,33 +10,23 @@ const manrope = Manrope({subsets: ['latin']});
 const outils = [
   {
     name: "Feedly",
-    description: "Un agrégateur de flux RSS populaire pour suivre facilement les actualités et les tendances du web.",
+    description: "un agrégateur de flux RSS qui permet de centraliser les articles de différents sites web en un seul endroit. Il est très utile pour suivre les publications de blogs, sites spécialisés ou médias tech, et organiser sa veille par thématique.",
     link: "https://feedly.com/",
   },
   {
     name: "Google Alerts",
-    description: "Service gratuit qui vous envoie des notifications par mail lorsqu'un nouveau contenu est publié sur un sujet donné.",
+    description: "Service gratuit qui envoie des notifications par e-mail lorsqu’un mot-clé (ex. : intelligence artificielle, cybersécurité) apparaît sur le web. C’est un outil simple et automatique pour rester informé des dernières publications en ligne sur un sujet précis.",
     link: "https://www.google.com/alerts",
   },
   {
-    name: "Talkwalker Alerts",
-    description: "Alternative à Google Alerts qui surveille les mentions sur le web, les blogs et Twitter.",
+    name: "Reddit",
+    description: "une plateforme communautaire où les utilisateurs partagent et commentent des contenus. Certains subreddits (ex. : r/MachineLearning, r/programming) sont d'excellentes sources pour découvrir des tendances, des projets innovants ou des discussions de fond sur les nouvelles technologies.",
     link: "https://www.talkwalker.com/alerts",
   },
   {
-    name: "Mention",
-    description: "Outil puissant pour suivre vos mentions sur les réseaux sociaux, les forums et les sites web.",
+    name: "X (anciennement Twitter)",
+    description: "X est un réseau social où de nombreux experts, entreprises et journalistes partagent des informations en temps réel. Il est efficace pour repérer les nouveautés, annonces et discussions autour des technologies en suivant des hashtags ou des comptes spécialisés.",
     link: "https://mention.com/",
-  },
-  {
-    name: "Scoop.it",
-    description: "Plateforme de curation qui permet de collecter, organiser et partager des contenus pertinents.",
-    link: "https://www.scoop.it/",
-  },
-  {
-    name: "Pocket",
-    description: "Permet d'enregistrer des articles et vidéos pour les lire plus tard, même hors connexion.",
-    link: "https://getpocket.com/",
   },
 ];
 

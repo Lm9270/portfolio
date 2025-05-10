@@ -2,14 +2,14 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import Screenshots from '@/components/screenshots';
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-900 to-indigo-900 text-white p-8 space-y-8 pt-30">
       <div className="text-center space-y-2">
         <h1 className="text-5xl font-bold">Projet ICGO</h1>
-        <p className="text-lg max-w-2xl mx-auto">Une application complète de gestion pour le laboratoire Galaxy Swiss Bourdin, facilitant la gestion des visiteurs médicaux et des rapports de visite.</p>
+        <p className="text-lg max-w-2xl mx-auto">Une application complète de gestion pour l&apos;Institut Claude Gaston Octave, facilitant la gestion des formateurs, des stagiaires ainsi que des formations.</p>
       </div>
 
       <section className="max-w-4xl mx-auto">
@@ -17,7 +17,7 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              Le projet GSB est une application conçue pour répondre aux besoins spécifiques du laboratoire pharmaceutique Galaxy Swiss Bourdin. Elle permet la gestion des comptes visiteurs, la consultation et la saisie des rapports de visite, ainsi que le suivi des praticiens et des médicaments. Ce projet met l&apos;accent sur la sécurité, l&apos;ergonomie et l&apos;efficacité.
+              L&apos;ICGO (Institut Claude Gaston Octave) dispose d'une application bureau C# afin de gérer leurs formations, stagiaires et formateurs. Cependant, cette application ayant été jugée incomplète, a dû être amélioré et avec de nouvelles fonctionnalités permettant la gestion des agences, modules, 
             </p>
           </CardContent>
         </Card>
@@ -28,8 +28,8 @@ export default function Page() {
           <CardContent className="p-6 text-white">
             <h3 className="text-2xl font-semibold mb-3">Fonctionnalités principales</h3>
             <ul className="list-disc list-inside space-y-2">
-              <li>Authentification sécurisée des utilisateurs</li>
-              <li>Gestion des visiteurs médicaux</li>
+              <li>Authentification sécurisée des utilisateurs (formateurs)</li>
+              <li>Opérations de création mise à jour et suppression </li>
               <li>Saisie et consultation des rapports de visite</li>
               <li>Gestion des praticiens et des médicaments</li>
               <li>Tableau de bord dynamique</li>
@@ -41,30 +41,24 @@ export default function Page() {
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold mb-3">Technologies utilisées</h3>
             <div className="flex flex-wrap gap-2">
-              <Badge>PHP</Badge>
-              <Badge>Laragon</Badge>
+              <Badge>C#</Badge>
+              <Badge>.NET Framework</Badge>
               <Badge>SQL</Badge>
               <Badge>PhpMyAdmin</Badge>
-              <Badge>architecture MVC</Badge>
-              <Badge>Bootstrap</Badge>
+              <Badge>Visual Studio 2022</Badge>
             </div>
           </CardContent>
         </Card>
       </section>
 
-      <section className="max-w-4xl mx-auto text-center space-y-6">
-        <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran du site</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Image src="/screenshots/screenshot1.png" alt="Capture d'écran 1" className="rounded-xl shadow-lg" />
-          <Image src="/screenshots/screenshot2.png" alt="Capture d'écran 2" className="rounded-xl shadow-lg" />
-          <Image src="/screenshots/screenshot3.png" alt="Capture d'écran 3" className="rounded-xl shadow-lg" />
-          <Image src="/screenshots/screenshot4.png" alt="Capture d'écran 4" className="rounded-xl shadow-lg" />
-        </div>
+      <section className="max-w-7xl mx-auto text-center space-y-6">
+        <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran</h3>
+        <Screenshots images={['icgo5.png', 'icgo1.jpg', 'icgo2.jpg']} />
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>
         <a href="Gsb"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></a>
-        <a href="Portfolio#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
+        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
         <a href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></a>
       </div>
     </div>
