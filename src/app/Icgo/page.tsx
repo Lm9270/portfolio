@@ -17,7 +17,7 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              L&apos;ICGO (Institut Claude Gaston Octave) dispose d'une application bureau C# afin de gérer leurs formations, stagiaires et formateurs. Cependant, cette application ayant été jugée incomplète, a dû être amélioré et avec de nouvelles fonctionnalités permettant la gestion des agences, modules, 
+              L&apos;ICGO (Institut Claude Gaston Octave) dispose d&apos;une application bureau C# afin de gérer leurs formations, stagiaires et formateurs. Cependant, cette application ayant été jugée incomplète, a dû être amélioré et avec de nouvelles fonctionnalités permettant la gestion des agences, modules, 
             </p>
           </CardContent>
         </Card>
@@ -37,15 +37,25 @@ export default function Page() {
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 shadow-lg text-white">
-          <CardContent className="p-6">
-            <h3 className="text-2xl font-semibold mb-3">Technologies utilisées</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge>C#</Badge>
-              <Badge>.NET Framework</Badge>
-              <Badge>SQL</Badge>
-              <Badge>PhpMyAdmin</Badge>
-              <Badge>Visual Studio 2022</Badge>
+        <Card className="bg-white/10 shadow-lg text-white flex flex-col justify-between">
+          <CardContent className="p-4 flex-1">
+            <div>
+              <h3 className="text-2xl font-semibold mb-2">Technologies utilisées</h3>
+              <div className="flex flex-wrap gap-2 text-sm mb-4">
+                <Badge>C#</Badge>
+                <Badge>.NET Framework</Badge>
+                <Badge>SQL</Badge>
+                <Badge>PhpMyAdmin</Badge>
+                <Badge>Visual Studio 2022</Badge>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 mt-4">Compétences mobilisées</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li>Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+              </ul>
             </div>
           </CardContent>
         </Card>

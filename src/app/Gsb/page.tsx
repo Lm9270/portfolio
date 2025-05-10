@@ -20,7 +20,8 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              Une entreprise fictive du nom de l&apos;ami des animaux souhaite développer sa présence en ligne via la création d'un site web vitrine permettant d&apos;afficher ses prestations et leur prix, d&apos;obtenir plus d&apos;informations sur l&apos;entreprise et enfin de prendre contact pour un rendez-vous
+              Le projet GSB - AppliFrais a consisté au développement d&apos;une application web destinée au laboratoire Galaxy Swiss Bourdin afin de faciliter la gestion des fiches de frais des visiteurs médicaux travaillant au sein de l&apos;entreprise. 
+              Cette application, développée en PHP selon le modèle MVC (Modèle Vue Contrôlleur) doit permettre, entre autres, la saisie et la consultation des fiches de frais des visiteurs et le contrôle et la validation de ces fiches par les comptables.
             </p>
           </CardContent>
         </Card>
@@ -82,7 +83,7 @@ export default function Page() {
             />
             <h4 className="text-xl font-semibold mb-2">Gantt Project</h4>
             <p className="text-sm text-center">
-              Utilisé pour la gestion du planning du projet avec des diagrammes de Gantt afin de visualiser l’avancement et les jalons clés.
+              Utilisé pour la gestion du planning du projet avec des diagrammes de Gantt afin de visualiser l&apos;avancement et les jalons clés.
             </p>
           </Card>
 
@@ -112,7 +113,7 @@ export default function Page() {
             />
             <h4 className="text-xl font-semibold mb-2">OpenClassrooms</h4>
             <p className="text-sm text-center">
-              Plateforme utilisée pour l’autoformation, permettant d’acquérir des compétences complémentaires tout au long du projet.
+              Plateforme utilisée pour l&apos;autoformation, permettant d&apos;acquérir des compétences complémentaires tout au long du projet.
             </p>
           </Card>
         </div>
