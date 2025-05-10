@@ -17,6 +17,7 @@ function Navbar() {
         setVisible(true);
       } else {
         setVisible(false);
+        setIsOpen(false);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -37,7 +38,7 @@ function Navbar() {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <a href="#">
+          <a href="Portfolio">
             <img src="/images/logoLM.png" alt="Logo" className="h-14" />
           </a>
           <span className="text-xl text-white font-semibold">
@@ -47,31 +48,31 @@ function Navbar() {
 
         <div className="hidden md:flex gap-6 text-gray-700 font-medium">
           <a
-            href="#profil"
+            href="Portfolio#profil"
             className="text-white hover:text-blue-300 transition"
           >
             Profil
           </a>
           <a
-            href="#projet"
+            href="Portfolio#projet"
             className="text-white hover:text-blue-300 transition"
           >
             Projets
           </a>
           <a
-            href="#projets"
+            href="Veille"
             className="text-white hover:text-blue-300 transition"
           >
             Veille
           </a>
           <a
-            href="#projects"
+            href="Documents"
             className="text-white hover:text-blue-300 transition whitespace-nowrap"
           >
             Diplômes / attestations
           </a>
           <a
-            href="#contact"
+            href="Portfolio#contact"
             className="text-white hover:text-blue-300 transition"
           >
             Contact
@@ -87,34 +88,34 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-gray-900 border-t shadow-md p-4 flex flex-col gap-4">
+        <div className="md:hidden bg-custom-gradient2 border-t shadow-md p-4 flex flex-col items-center gap-4">
           <a
-            href="#about"
-            className="text-white hover:text-blue-300 transition"
+            href="#profil"
+            className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             À propos de moi
           </a>
           <a
-            href="#projects"
-            className="text-white hover:text-blue-300 transition"
+            href="#project"
+            className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Projets
           </a>
           <a
-            href="#projects"
-            className="text-white hover:text-blue-300 transition"
+            href="#project"
+            className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Veille Informationnelle
           </a>
           <a
-            href="#projects"
-            className="text-white hover:text-blue-300 transition"
+            href="#project"
+            className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Diplômes / attestations
           </a>
           <a
             href="#contact"
-            className="text-white hover:text-blue-300 transition"
+            className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Contact
           </a>

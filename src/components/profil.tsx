@@ -35,7 +35,7 @@ function Profil() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = () => {      
       if (window.scrollY > window.innerHeight * 1.52) {
         setIsFixed(false); // Après 40% du scroll, le titre devient normal
       } else {
@@ -61,25 +61,27 @@ function Profil() {
       <div className="absolute top-0 left-0 w-full">
         <motion.h1
           style={{ x, opacity }}
-          className={`text-white font-bold text-6xl whitespace-nowrap ${
+          className={`hidden md:block text-white font-bold text-3xl md:text-6xl whitespace-nowrap ${
             isFixed ? "fixed top-2/4 left-2/4" : "absolute left-2/4 top-[-70]"
           } object-contain`}
         >
           🙋‍♂️ À Propos de Moi..
         </motion.h1>
 
+        <h1 className="md:hidden text-white text-3xl text-center font-bold">🙋‍♂️ À Propos de Moi..</h1>
+
         <div id="profil" className="max-w-5xl mx-auto p-6">
-          <div className="flex items-center gap-12 bg-custom-gradient2 p-6 rounded-xl shadow-2xl shadow-white border-2 border-white">
+          <div className="flex flex-col md:flex-row items-center gap-12 bg-custom-gradient2 p-6 rounded-xl shadow-2xl shadow-white border-2 border-white">
             <img
-              src="/images/pp.png"
+              src="/images/Liam.jpg"
               alt="Photo de profil"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-md"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-md object-cover"
             />
             <div>
-              <h2 className="text-3xl text-custom-blue font-semibold mb-8">
+              <h2 className="text-xl md:text-3xl text-custom-blue font-semibold mb-8">
                 👤 Informations Personnelles
               </h2>
-              <div className="text-xl flex flex-col gap-2">
+              <div className="md:text-xl flex flex-col gap-2">
                 <p>
                   <strong>Nom :</strong> Liam MORICONI
                 </p>
@@ -98,18 +100,18 @@ function Profil() {
                   <strong>Téléphone :</strong> <FaPhone className="inline" /> 07
                   84 68 95 25
                 </p>
-              </div>
-              <a href="#contact">
-                <Button className="text-xl font-blod mt-4 bg-gray-200 text-black border-1 border-black hover:text-blue-500 hover:border-blue-500 hover:bg-gray-200">
+              <a href="#contact" className="not-md:self-center">
+                <Button className="text-xl font-blod mt-4 bg-gray-200 text-black border-1 border-black hover:text-blue-500 hover:border-blue-500 hover:bg-gray-200 active:bg-gray-600">
                   Me contacter
                 </Button>
               </a>
+              </div>
             </div>
           </div>
 
           {/* Timeline */}
-          <div className="mt-12 bg-custom-gradient2 pl-30 p-8 rounded-xl shadow-2xl shadow-white border-2 border-white">
-            <h2 className="text-3xl font-semibold mb-10">
+          <div className="mt-12 bg-custom-gradient2 md:pl-30 p-8 rounded-xl shadow-2xl shadow-white border-2 border-white">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-10 not-md:text-center">
               🎓 Études & Formation
             </h2>
             <div className="relative border-l-4 border-blue-500 pl-6">
@@ -152,8 +154,8 @@ function Profil() {
           </div>
 
           {/* Expériences professionnelles */}
-          <div className="mt-12  bg-custom-gradient2 pl-30 p-8 rounded-xl shadow-2xl shadow-white border-2 border-white">
-            <h2 className="text-3xl font-semibold mb-10">
+          <div className="mt-12  bg-custom-gradient2 md:pl-30 p-8 rounded-xl shadow-2xl shadow-white border-2 border-white">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-10 not-md:text-center">
               👔 Expériences professionnelles
             </h2>
             <div className="relative border-l-4 border-green-500 pl-6">
@@ -197,10 +199,10 @@ function Profil() {
           </div>
 
           <div className="mt-12  bg-custom-gradient2 p-8 rounded-xl shadow-2xl shadow-white border-2 border-white">
-            <h2 className="text-3xl pl-30 font-semibold mb-10">
+            <h2 className="text-2xl md:text-3xl md:pl-30 font-semibold mb-10 not-md:text-center">
               🧑‍💻 Technologies maîtrisées
             </h2>
-            <div className="grid grid-cols-6 gap-10">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-10 place-items-center">
               {[
                 {
                   src: "/images/icones/php.png",
@@ -276,15 +278,16 @@ function Profil() {
                 },
               ].map((tech, index) => (
                 <Popover key={index}>
-                  <PopoverTrigger className="w-30 h-30 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <PopoverTrigger className="w-[140%] md:w-30 md:h-30 flex items-center justify-center transition-transform duration-300 hover:scale-110 active:opacity-50 ">
                     <img
                       src={tech.src}
                       alt={tech.alt}
                       className="w-full h-full object-contain"
+                      loading="lazy"
                     />
                   </PopoverTrigger>
-                  <PopoverContent className="p-4 shadow-xl border border-gray-400 rounded-lg bg-white max-w-xs text-center z-100">
-                    <h3 className="text-lg font-semibold text-blue-600">
+                  <PopoverContent className="p-4 shadow-xl border-2 border-black rounded-lg bg-blue-200 max-w-xs text-center z-100">
+                    <h3 className="text-lg font-bold">
                       {tech.alt}
                     </h3>
                     <p className="text-gray-700 text-sm mt-2">
@@ -297,11 +300,12 @@ function Profil() {
           </div>
 
           {/* CV */}
-          <div className="mt-12 flex gap-10">
-            <div className="text-4xl animate-bounce mt-2">👉</div>
+          <div className="mt-12 flex flex-col md:flex-row justify-center gap-4 md:gap-10">
+            <div className="text-4xl animate-bounce mt-2 hidden md:block">👉</div>
+            <div className="text-4xl animate-bounce mt-2 self-center md:hidden">👇</div>
             <Button
               onClick={handleDownloadCV}
-              className="p-6 text-xl bg-white text-black border-2 border-black hover:border-blue-500 hover:text-blue-500 hover:bg-white"
+              className="p-6 text-xl bg-white text-black border-2 border-black hover:border-blue-500 hover:text-blue-500 hover:bg-white active:opacity-80"
             >
               Télécharger mon CV
             </Button>

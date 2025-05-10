@@ -47,15 +47,15 @@ function Contact() {
 
     return (
         <div className="">
-             <h2 id="contact" className="text-white text-5xl font-bold mb-8 text-center">📩 Contactez-moi</h2>
-            <div className="border-white border-2 p-10 bg-custom-gradient2 shadow-lg shadow-blue-200 rounded-lg mb-10">
+             <h2 id="contact" className="text-white text-3xl md:text-5xl font-bold mb-8 text-center">📩 Contactez-moi</h2>
+            <div className="border-white border-2 p-5 md:p-10 bg-custom-gradient2 shadow-lg shadow-blue-200 rounded-lg mb-10">
     
             {isSubmited && (
             <p className="text-green-600 text-center font-medium">Merci pour votre message !</p>
             )}
     
             <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-[60%] m-auto">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 md:w-[60%] m-2 md:m-auto">
                 <FormField
                 control={form.control}
                 name="name"
@@ -63,7 +63,7 @@ function Contact() {
                     <FormItem className="relative">
                     <FormLabel className="text-lg">Nom / prénom</FormLabel>
                     <FormControl>
-                        <Input className="bg-white border-black border-1" placeholder="Votre nom" {...field} />
+                        <Input className="bg-white border-black border-1" autoComplete="nom-prénom" placeholder="Nom - Prénom" {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
@@ -77,7 +77,7 @@ function Contact() {
                     <FormItem className="relative">
                     <FormLabel className="text-lg">Email</FormLabel>
                     <FormControl>
-                        <Input className="bg-white border-black border-1" type="email" placeholder="Votre email" {...field} />
+                        <Input className="bg-white border-black border-1" type="email"  placeholder="Email" {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
@@ -91,14 +91,14 @@ function Contact() {
                     <FormItem>
                     <FormLabel className="text-lg">Message</FormLabel>
                     <FormControl>
-                        <Textarea className="bg-white border-black border-1 max-h-30" placeholder="Votre message..." {...field} />
+                        <Textarea className="bg-white border-black border-1 max-h-60 md:max-h-30" placeholder="Votre message..." {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
                 )}
                 />
     
-                <Button type="submit" className="w-[30%] text-lg bg-gray-200 text-black border-1 border-black hover:border-blue-500 hover:text-blue-500 hover:bg-gray-250" disabled={form.formState.isSubmitting}>
+                <Button type="submit" className="md:w-[30%] text-lg bg-gray-200 text-black border-1 border-black hover:border-blue-500 hover:text-blue-500 hover:bg-gray-250 active:bg-gray-600" disabled={form.formState.isSubmitting}>
                 {form.formState.isSubmitting ? "Envoi..." : "Envoyer"}
                 </Button>
             </form>

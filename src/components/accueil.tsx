@@ -27,13 +27,13 @@ function Accueil() {
   }, []);
 
   return (
-    <div className={`${isReady ? "visible" : "hidden-until-loaded"} h-[200vh] flex flex-row-reverse relative`}>
+    <div className={`${isReady ? "visible" : "hidden-until-loaded"} h-[200vh] flex flex-col items-center relative p-4 md:flex-row-reverse`}> 
       <motion.h1
         style={{ x, opacity }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="z-10 fixed top-3/7 left-1/3 -translate-x-1/2 text-6xl font-bold text-left text-white whitespace-nowrap"
+        className="z-10 fixed top-1/4 md:top-3/7 left-1/2 md:left-1/3 -translate-x-1/2 text-[clamp(2rem,5vw,4rem)] font-bold text-center md:text-left text-white whitespace-nowrap"
       >
         Portfolio de
         <br />
@@ -59,13 +59,13 @@ function Accueil() {
         )}
       </motion.h1>
       <motion.img
-       style={{ x: imgX, opacity: imgOpacity }}
-       initial={{ opacity: 0, y: 20 }}
-       animate={{ opacity: 1, y: 0 }}
-       transition={{ duration: 1 }}
+        style={{ x: imgX, opacity: imgOpacity }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
         src="/images/logoLM.png"
         alt="Logo"
-        className="fixed top-1/4 left-2/3 -translate-x-1/2 h-[50%] w-[50%] object-contain"
+        className="fixed top-1/3 md:top-1/4 left-1/2 md:left-2/3 -translate-x-1/2 h-[30%] w-[30%] md:h-[50%] md:w-[50%] object-contain"
       />
     </div>
   );
