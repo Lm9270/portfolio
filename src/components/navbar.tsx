@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import React from "react";
+import Image from "next/image";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,7 @@ function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <a href="Portfolio">
-            <img src="/images/logoLM.png" alt="Logo" className="h-14" />
+            <Image src="/images/logoLM.png" alt="Logo" className="h-14" />
           </a>
           <span className="text-xl text-white font-semibold">
             Portfolio de Liam MORICONI

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import {
   FaGraduationCap,
   FaBriefcase,
@@ -72,7 +73,7 @@ function Profil() {
 
         <div id="profil" className="max-w-5xl mx-auto p-6">
           <div className="flex flex-col md:flex-row items-center gap-12 bg-custom-gradient2 p-6 rounded-xl shadow-2xl shadow-white border-2 border-white">
-            <img
+            <Image
               src="/images/Liam.jpg"
               alt="Photo de profil"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-md object-cover"
@@ -279,7 +280,7 @@ function Profil() {
               ].map((tech, index) => (
                 <Popover key={index}>
                   <PopoverTrigger className="w-[140%] md:w-30 md:h-30 flex items-center justify-center transition-transform duration-300 hover:scale-110 active:opacity-50 ">
-                    <img
+                    <Image
                       src={tech.src}
                       alt={tech.alt}
                       className="w-full h-full object-contain"

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Alfa_Slab_One, Manrope } from "next/font/google";
 import Articles from "@/components/articles";
 import Outils from "@/components/outils";
+import Image from "next/image";
 
 const alfa = Alfa_Slab_One({ weight: '400' , subsets: ['latin'],});
 const manrope = Manrope({subsets: ['latin']});
@@ -12,7 +13,7 @@ const manrope = Manrope({subsets: ['latin']});
 function Page() {
   return (
     <div className="min-h-screen text-white relative mt-10">
-      <img
+      <Image
         src="/images/gifs/fondVeille.gif"
         alt="fond-écrans"
         className="w-full h-full fixed object-cover z-[-10]"
@@ -32,7 +33,7 @@ function Page() {
         >
           Les évolutions et la concurrence du secteur de
          
-          <p className="font-bold text-5xl text-yellow-200 mt-10">l'intelligence artificielle</p>
+          <p className="font-bold text-5xl text-yellow-200 mt-10">l&apos;intelligence artificielle</p>
 
         </motion.div>
 
