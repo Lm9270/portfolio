@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alfa_Slab_One, Manrope } from "next/font/google";
 
-const alfa = Alfa_Slab_One({ weight: '400', subsets: ["latin"] });
-const manrope = Manrope({subsets: ["latin"]});
+const alfa = Alfa_Slab_One({ weight: '400', subsets: ['latin'] });
+const manrope = Manrope({subsets: ['latin']});
 
 const outils = [
   {
