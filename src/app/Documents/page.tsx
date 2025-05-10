@@ -1,5 +1,4 @@
-"use client";
-
+"use client"; 
 import React from "react";
 import { motion } from "framer-motion";
 import { Alfa_Slab_One, Manrope } from "next/font/google";
@@ -27,7 +26,7 @@ const documents = [
   },
 ];
 
-function Documents() {
+export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
       <h1 className={`${alfa.className} text-5xl mt-20 mb-12 text-center`}>
@@ -66,4 +65,3 @@ function Documents() {
   );
 }
 
-export default Documents;
