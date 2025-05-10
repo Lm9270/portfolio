@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Screenshots from '@/components/screenshots';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -67,9 +68,9 @@ export default function Page() {
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>
-        <a href="Gsb"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></a>
-        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
-        <a href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></a>
+        <Link href="Gsb"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></Link>
+        <Link href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
       </div>
     </div>
   );

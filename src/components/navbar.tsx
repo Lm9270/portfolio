@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,45 +40,45 @@ function Navbar() {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <a href="Portfolio">
+          <Link href="Portfolio">
             <Image src="/images/logoLM.png" alt="Logo" className="h-14" width={90} height={90}/>
-          </a>
+          </Link>
           <span className="text-xl text-white font-semibold">
             Portfolio de Liam MORICONI
           </span>
         </div>
 
         <div className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <a
+          <Link
             href="/#profil"
             className="text-white hover:text-blue-300 transition"
           >
             Profil
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#projet"
             className="text-white hover:text-blue-300 transition"
           >
             Projets
-          </a>
-          <a
+          </Link>
+          <Link
             href="Veille"
             className="text-white hover:text-blue-300 transition"
           >
             Veille
-          </a>
-          <a
+          </Link>
+          <Link
             href="Documents"
             className="text-white hover:text-blue-300 transition whitespace-nowrap"
           >
             Diplômes / attestations
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="text-white hover:text-blue-300 transition"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         <button
@@ -90,36 +91,36 @@ function Navbar() {
 
       {isOpen && (
         <div className="md:hidden bg-custom-gradient2 border-t shadow-md p-4 flex flex-col items-center gap-4">
-          <a
+          <Link
             href="/#profil"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             À propos de moi
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#projet"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Projets
-          </a>
-          <a
+          </Link>
+          <Link
             href="Veille"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Veille Informationnelle
-          </a>
-          <a
+          </Link>
+          <Link
             href="Documents"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Diplômes / attestations
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="text-white hover:text-blue-300 active:text-blue-300 transition"
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>

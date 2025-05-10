@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Screenshots from '@/components/screenshots';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -56,7 +57,7 @@ export default function Page() {
               <h3 className="text-xl font-semibold mb-2 mt-4">Compétences mobilisées</h3>
               <ul className="list-disc list-inside space-y-2 text-sm">
                 <li>Gérer le patrimoine informatique</li>
-                <li>Répondre aux incidents et aux demandes d'assitance et d&apos;évolution</li>
+                <li>Répondre aux incidents et aux demandes d&apos;assitance et d&apos;évolution</li>
                 <li>Mettre à disposition des utilisateurs un service informatique</li>
               </ul>
             </div>
@@ -70,9 +71,9 @@ export default function Page() {
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>
-        <a href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></a>
-        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
-        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></a>
+        <Link href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></Link>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
       </div>
     </div>
   );

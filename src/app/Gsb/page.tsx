@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Screenshots from '@/components/screenshots';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -126,9 +127,9 @@ export default function Page() {
 
 
       <div className='flex justify-center gap-4 pt-8'>
-        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></a>
-        <a href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
-        <a href="Icgo"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></a>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></Link>
+        <Link href="Icgo"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
@@ -103,11 +104,11 @@ function Profil() {
                   <strong>Téléphone :</strong> <FaPhone className="inline" /> 07
                   84 68 95 25
                 </p>
-              <a href="/#contact" className="not-md:self-center">
+              <Link href="/#contact" className="not-md:self-center">
                 <Button className="text-xl font-blod mt-4 bg-gray-200 text-black border-1 border-black hover:text-blue-500 hover:border-blue-500 hover:bg-gray-200 active:bg-gray-600">
                   Me contacter
                 </Button>
-              </a>
+              </Link>
               </div>
             </div>
           </div>
