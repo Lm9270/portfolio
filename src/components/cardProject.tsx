@@ -1,7 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { X } from "lucide-react";
 
 interface CardProject {
   title: string;
@@ -15,8 +12,6 @@ const CardProject: React.FC<CardProject> = ({
   href,
 
 }) => {
-  const [open, setOpen] = useState(false);
-
   return (
     <div>
           <div className="relative group w-100 h-80 border-2 border-blue-200 rounded-lg shadow-2xl shadow-blue-200">

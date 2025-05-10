@@ -51,7 +51,7 @@ function Articles() {
   return (
     <div className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
       <h1 className={`${alfa.className} text-5xl mb-12 text-center`}>
-        📰 Dernières avancées de l'IA
+        📰 Dernières avancées de l&apos;IA
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">

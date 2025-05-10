@@ -2,13 +2,14 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-900 to-indigo-900 text-white p-8 space-y-8 pt-30">
       <div className="text-center space-y-2">
         <h1 className="text-5xl font-bold">Projet GSB</h1>
-        <p className="text-lg max-w-2xl mx-auto">Une application PHP pour le laboratoire Galaxy Swiss Bourdin, facilitant la gestion des fiches de frais et leur contrôle par les comptables de l'entreprise</p>
+        <p className="text-lg max-w-2xl mx-auto">Une application PHP pour le laboratoire Galaxy Swiss Bourdin, facilitant la gestion des fiches de frais et leur contrôle par les comptables de l&apos;entreprise</p>
       </div>
 
       <section className="max-w-4xl mx-auto">
@@ -16,7 +17,7 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              Le projet GSB est une application conçue pour répondre aux besoins spécifiques du laboratoire pharmaceutique Galaxy Swiss Bourdin. Elle permet la gestion des comptes visiteurs, la consultation et la saisie des rapports de visite, ainsi que le suivi des praticiens et des médicaments. Ce projet met l'accent sur la sécurité, l'ergonomie et l'efficacité.
+              Le projet GSB est une application conçue pour répondre aux besoins spécifiques du laboratoire pharmaceutique Galaxy Swiss Bourdin. Elle permet la gestion des comptes visiteurs, la consultation et la saisie des rapports de visite, ainsi que le suivi des praticiens et des médicaments. Ce projet met l&apos;accent sur la sécurité, l&apos;ergonomie et l&apos;efficacité.
             </p>
           </CardContent>
         </Card>
@@ -52,18 +53,18 @@ export default function Page() {
       </section>
 
       <section className="max-w-7xl mx-auto text-center space-y-6">
-        <h3 className="text-3xl font-semibold mb-4">Captures d'écran du site</h3>
+        <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran du site</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <img loading="lazy" src="images/projets/gsb2.jpg" alt="Capture d'écran 1" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
-          <img loading="lazy" src="images/projets/gsb1.jpg" alt="Capture d'écran 2" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
-          <img loading="lazy" src="images/projets/gsb3.jpg" alt="Capture d'écran 3" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
-          <img loading="lazy" src="images/projets/gsb4.jpg" alt="Capture d'écran 4" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
+          <Image loading="lazy" src="images/projets/gsb2.jpg" alt="Capture d'écran 1" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
+          <Image loading="lazy" src="images/projets/gsb1.jpg" alt="Capture d'écran 2" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
+          <Image loading="lazy" src="images/projets/gsb3.jpg" alt="Capture d'écran 3" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
+          <Image loading="lazy" src="images/projets/gsb4.jpg" alt="Capture d'écran 4" className="rounded-xl shadow-lg h-full w-full hover:scale-105 animation duration-200 ease-in-out" />
         </div>
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>
         <a href="Portfolio#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></a>
-        <a href="Portfolio#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l'accueil</Button></a>
+        <a href="Portfolio#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></a>
         <a href="Icgo"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></a>
       </div>
     </div>
