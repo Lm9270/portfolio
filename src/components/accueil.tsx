@@ -64,6 +64,7 @@ function Accueil() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         src="/images/logoLM.png"
+        loading="lazy"
         alt="Logo"
         className="fixed top-1/3 md:top-1/4 left-1/2 md:left-2/3 -translate-x-1/2 h-[30%] w-[30%] md:h-[50%] md:w-[50%] object-contain"
       />

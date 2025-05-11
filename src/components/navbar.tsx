@@ -40,7 +40,7 @@ function Navbar() {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <Link href="Portfolio">
+          <Link href="/">
             <Image src="/images/logoLM.png" alt="Logo" className="h-14" width={90} height={90}/>
           </Link>
           <span className="text-xl text-white font-semibold">

@@ -31,6 +31,16 @@ function Projects() {
             imageSrc: "/images/cardCover/cardUnowhy.jpg",
             href: "Unowhy",
           },
+          {
+            title: "Pobi",
+            imageSrc: "/images/cardCover/cardPobi.jpg",
+            href: "Pobi",
+          },
+          {
+            title: "Maui",
+            imageSrc: "/images/cardCover/cardMaui.jpg",
+            href: "Maui",
+          },
         ].map((project, index) => (
           <div key={index} className="mt-0">
             <CardProject {...project} />
