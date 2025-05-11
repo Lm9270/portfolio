@@ -18,7 +18,7 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              L&apos;entreprise POBI, travaillant dans le secteur de la construction de maisons préfabriquées et disposant d'un service informatique gérant un progiciel (application en locale permettant d'effectuer des devis ainsi que de passer des commandes)
+              L&apos;entreprise POBI, travaillant dans le secteur de la construction de maisons préfabriquées et disposant d&pos;un service informatique gérant un progiciel (application en locale permettant d&apos;effectuer des devis ainsi que de passer des commandes)
             </p>
           </CardContent>
         </Card>

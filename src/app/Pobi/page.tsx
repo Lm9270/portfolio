@@ -9,8 +9,8 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-900 to-indigo-900 text-white p-8 space-y-8 pt-30">
       <div className="text-center space-y-2">
-        <h1 className="text-5xl font-bold">Développement back-end et front-end d'un progiciel</h1>
-        <p className="text-lg max-w-2xl mx-auto">Mission dans le cadre de mon stage de première année chez l'entreprise POBI Industrie</p>
+        <h1 className="text-5xl font-bold">Développement back-end et front-end d&apos;un progiciel</h1>
+        <p className="text-lg max-w-2xl mx-auto">Mission dans le cadre de mon stage de première année chez l&apos;entreprise POBI Industrie</p>
       </div>
 
       <section className="max-w-4xl mx-auto">
@@ -18,7 +18,7 @@ export default function Page() {
           <CardContent className="p-6">
             <h2 className="text-white text-3xl font-semibold mb-4">Description du projet</h2>
             <p className='text-white'>
-              L&apos;entreprise POBI, travaillant dans le secteur de la construction de maisons préfabriquées et disposant d'un service informatique gérant un progiciel (application en locale permettant d'effectuer des devis ainsi que de passer des commandes)
+              L&apos;entreprise POBI, travaillant dans le secteur de la construction de maisons préfabriquées et disposant d&apos;un service informatique gérant un progiciel (application en locale permettant d&apos;effectuer des devis ainsi que de passer des commandes)
             </p>
           </CardContent>
         </Card>
