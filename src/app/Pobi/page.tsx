@@ -29,11 +29,10 @@ export default function Page() {
           <CardContent className="p-6 text-white">
             <h3 className="text-2xl font-semibold mb-3">Fonctionnalités principales</h3>
             <ul className="list-disc list-inside space-y-2">
-              <li>Création de machines virtuelles windows et linux</li>
-              <li>Configuration de ses machines virtuelles</li>
-              <li>Gestion des comptes utilisateurs et des permissions</li>
-              <li>Test du bon fonctionnement des machines virtuelles</li>
-              <li>Corrections des anomalies raportées</li>
+              <li>Prise en main de l&apos;application existante</li>
+              <li>Développement d&apos;une fonctionnalité d&apos;optimisation </li>
+              <li>Développement d&apos;une interface graphique pour les utilsateurs montrant l&apos;optimisation</li>
+              <li>Intégration du code au sein de l&apos;application locale et débuggage</li>
             </ul>
           </CardContent>
         </Card>
@@ -65,14 +64,29 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto text-center space-y-6">
         <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran</h3>
-        <Screenshots images={['unowhy1.jpg', 'unowhy2.jpg', 'unowhy3.jpg', 'unowhy4.jpeg']} />
+        <Screenshots images={['pobi1.jpg', 'pobi2.jpg', 'pobi3.jpg', 'pobi4.jpg']} />
+      </section>
+
+      <section className="max-w-5xl mx-auto text-center space-y-6 pt-8">
+        <h3 className="text-3xl font-semibold mb-4">Documents</h3>
+        <p className="text-white text-lg">Retrouvez ci-dessous les documents relatifs au projet à télécharger au format PDF :</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a
+            href="/documents/RapportDeStagePobi.pdf"
+            download
+            className="bg-white/10 hover:bg-white hover:text-black transition-all px-6 py-3 rounded-lg shadow-lg text-white"
+          >
+            📘 Rapport de stage
+          </a>
+        </div>
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>
-        <Link href="Wordpress"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
+        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
         <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></Link>
-        <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
+        <Link href="Unowhy"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
       </div>
     </div>
   );
 }
+

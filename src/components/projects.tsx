@@ -12,6 +12,16 @@ function Projects() {
       <div className="grid grid-cols-1 gap-10 place-items-center justify-center md:grid-cols-2 md:gap-20">
         {[
           {
+            title: "Pobi",
+            imageSrc: "/images/cardCover/cardPobi.jpg",
+            href: "Pobi",
+          },
+          {
+            title: "Unowhy",
+            imageSrc: "/images/cardCover/cardUnowhy.jpg",
+            href: "Unowhy",
+          },
+          {
             title: "GSB",
             imageSrc: "/images/cardCover/cardGSB2.jpg",
             href: "Gsb",
@@ -25,16 +35,6 @@ function Projects() {
             title: "Ami des animaux",
             imageSrc: "/images/cardCover/cardAmis.jpg",
             href: "Wordpress",
-          },
-          {
-            title: "Unowhy",
-            imageSrc: "/images/cardCover/cardUnowhy.jpg",
-            href: "Unowhy",
-          },
-          {
-            title: "Pobi",
-            imageSrc: "/images/cardCover/cardPobi.jpg",
-            href: "Pobi",
           },
           {
             title: "Maui",
