@@ -125,6 +125,28 @@ export default function Page() {
         <Screenshots images={['gsb6.jpg', 'gsb2.jpg', 'gsb1.jpg', 'gsb3.jpg', 'gsb4.jpg']} />
       </section>
 
+        {/* ✅ Nouvelle section : Documents à télécharger */} 
+        <section className="max-w-5xl mx-auto text-center space-y-6 pt-8">
+        <h3 className="text-3xl font-semibold mb-4">Documents</h3>
+        <p className="text-white text-lg">Retrouvez ci-dessous les documents relatifs au projet à télécharger au format PDF :</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a
+            href="/documents/DocTechniqueGSB.pdf"
+            download
+            className="bg-white/10 hover:bg-white hover:text-black transition-all px-6 py-3 rounded-lg shadow-lg text-white"
+          >
+            📄 Documentation Technique
+          </a>
+          <a
+            href="/documents/DocUtilisateurGSB.pdf"
+            download
+            className="bg-white/10 hover:bg-white hover:text-black transition-all px-6 py-3 rounded-lg shadow-lg text-white"
+          >
+            📘 Documentation Utilisateur
+          </a>
+        </div>
+      </section>
+
 
       <div className='flex justify-center gap-4 pt-8'>
         <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
