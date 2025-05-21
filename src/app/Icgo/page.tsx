@@ -64,7 +64,7 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto text-center space-y-6">
         <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran</h3>
-        <Screenshots images={['icgo5.png', 'icgo1.jpg', 'icgo2.jpg']} />
+        <Screenshots images={['icgo5.png', 'icgo1.jpg', 'icgo2.jpg', 'icgo6.png']} />
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>

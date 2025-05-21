@@ -24,7 +24,7 @@ function Page() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-6 text-center gap-20">
         <h2 className={`${alfa.className} text-6xl`}>
-          📡 Veille Technologique
+          📡 Veille Informationnelle
         </h2>
 
         <motion.div

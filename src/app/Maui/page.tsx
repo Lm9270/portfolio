@@ -52,7 +52,7 @@ export default function Page() {
             <div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Compétences mobilisées</h3>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Répondre aux incidents et aux demandes d&apos;assitance et d&apos;évolution</li>
+                <li>S'autoformer</li>
                 <li>Travailler en mode projet</li>
               </ul>
             </div>
@@ -62,7 +62,7 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto text-center space-y-6">
         <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran</h3>
-        <Screenshots images={['unowhy1.jpg', 'unowhy2.jpg', 'unowhy3.jpg', 'unowhy4.jpeg']} />
+        <Screenshots images={['maui1.png', 'maui2.png']} />
       </section>
 
       <div className='flex justify-center gap-4 pt-8'>

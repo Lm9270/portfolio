@@ -10,40 +10,28 @@ const manrope = Manrope({subsets: ['latin']});
 
 const articles = [
   {
-    title: "L'essor d'OpenAI : ChatGPT et ses usages innovants",
-    description: "OpenAI continue de dominer le secteur avec ses avancées en NLP et la popularité de ChatGPT, transformant de nombreux secteurs économiques.",
-    source: "OpenAI Blog",
-    link: "https://openai.com/blog",
+    title: "DeepSeek, cette start-up chinoise qui fait mieux qu'OpenAI",
+    description: "Qui a dit qu'il fallait dépenser des milliards pour faire de l'IA générative ? Le modèle DeepSeek-R1 atteint des performances comparables à celles du modèle o1 d'OpenAI pour les tâches de mathématiques, de code et de raisonnement. Pour soutenir la communauté, la start-up a mis en libre accès DeepSeek-R1-Zero, DeepSeek-R1 et six modèles denses distillés à partir de DeepSeek-R1, basés sur Llama et Qwen.",
+    source: "l'Usine Digitale",
+    link: "https://www.usine-digitale.fr/article/deepseek-cette-start-up-chinoise-qui-fait-mieux-qu-openai-pour-96-moins-cher.N2226172",
   },
   {
-    title: "Gemini : La réponse de Google à OpenAI",
-    description: "Gemini de Google entre dans la compétition avec des modèles multimodaux prometteurs, visant à concurrencer les leaders du marché.",
-    source: "Google AI",
-    link: "https://deepmind.google/technologies/gemini/",
+    title: "Mistral AI, la pépite française de l’intelligence artificielle open source",
+    description: "Mistral AI, start-up française dans le domaine de l'IA générative, s'est rapidement fait connaître grâce à ses modèles de langage open source et commerciaux. Ce dossier vous dit tout sur cette pépite : son histoire, sa technologie et ses applications concrètes.",
+    source: "lesnumeriques.com",
+    link: "https://www.lesnumeriques.com/intelligence-artificielle/ce-qu-il-faut-vraiment-savoir-sur-mistral-ai-la-pepite-francaise-de-l-intelligence-artificielle-open-source-a235428.html",
   },
   {
-    title: "Anthropic et Claude : Une nouvelle approche de l'IA",
-    description: "Anthropic développe Claude, un concurrent direct de ChatGPT, avec une approche axée sur la sécurité et l'alignement des modèles.",
-    source: "Anthropic",
-    link: "https://www.anthropic.com/",
+    title: "Sora, l'outil d'IA vidéo d'OpenAI, enfin accessible en Europe ",
+    description: "Les abonnés payants à ChatGPT pourront désormais essayer l'outil vidéo annoncé il y a plus d'un an. La concurrence est de plus en plus sérieuse sur ces outils ultraréalistes, mais aussi particulièrement coûteux.",
+    source: "Les Echos",
+    link: "https://www.lesechos.fr/tech-medias/intelligence-artificielle/sora-loutil-dia-video-dopenai-enfin-accessible-en-europe-2151330",
   },
   {
-    title: "Mistral AI : L'ascension européenne",
-    description: "Mistral AI, une startup française, propose des modèles open source puissants qui séduisent la communauté IA.",
-    source: "Mistral",
-    link: "https://mistral.ai/",
-  },
-  {
-    title: "Meta et LLaMA : Le pari open source",
-    description: "Meta mise sur l'open source avec LLaMA, un modèle performant qui démocratise l'accès aux grandes IA.",
-    source: "Meta AI",
-    link: "https://ai.meta.com/llama/",
-  },
-  {
-    title: "L'IA en Chine : Baidu et ERNIE",
-    description: "Baidu, avec son modèle ERNIE, investit massivement dans l'IA pour rattraper la concurrence mondiale.",
-    source: "Baidu Research",
-    link: "https://research.baidu.com/",
+    title: "Le nouvel outil de génération d'images de ChatGPT désormais accessible gratuitement",
+    description: "OpenAI a annoncé que son nouveau générateur d’images basé sur GPT-4o est maintenant accessible également aux utilisateurs gratuits.",
+    source: "lesnumeriques.com",
+    link: "https://www.lesnumeriques.com/intelligence-artificielle/le-nouvel-outil-de-generation-d-images-de-chatgpt-desormais-accessible-gratuitement-n235086.html",
   },
 ];
 
@@ -51,7 +39,7 @@ function Articles() {
   return (
     <div className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
       <h1 className={`${alfa.className} text-5xl mb-12 text-center`}>
-        📰 Dernières avancées de l&apos;IA
+        📰 Articles 
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">

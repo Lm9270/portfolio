@@ -67,7 +67,7 @@ export default function Page() {
       <div className='flex justify-center gap-4 pt-8'>
         <Link href="Icgo"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Précédent</Button></Link>
         <Link href="/#projet"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Retour à l&apos;accueil</Button></Link>
-        <Link href="Unowhy"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
+        <Link href="Maui"><Button className='transition-all duration-500 hover:text-black hover:bg-white '>Suivant</Button></Link>
       </div>
     </div>
   );

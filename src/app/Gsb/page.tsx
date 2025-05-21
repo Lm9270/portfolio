@@ -122,7 +122,7 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto text-center space-y-6">
         <h3 className="text-3xl font-semibold mb-4">Captures d&apos;écran</h3>
-        <Screenshots images={['gsb6.jpg', 'gsb2.jpg', 'gsb1.jpg', 'gsb3.jpg', 'gsb4.jpg']} />
+        <Screenshots images={['gsb8.jpg', 'gsb2.jpg', 'gsb1.jpg', 'gsb3.jpg', 'gsb4.jpg', 'gsb7.png']} />
       </section>
 
         {/* ✅ Nouvelle section : Documents à télécharger */} 

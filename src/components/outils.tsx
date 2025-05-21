@@ -21,12 +21,12 @@ const outils = [
   {
     name: "Reddit",
     description: "une plateforme communautaire où les utilisateurs partagent et commentent des contenus. Certains subreddits (ex. : r/MachineLearning, r/programming) sont d'excellentes sources pour découvrir des tendances, des projets innovants ou des discussions de fond sur les nouvelles technologies.",
-    link: "https://www.talkwalker.com/alerts",
+    link: "https://www.reddit.com/",
   },
   {
     name: "X (anciennement Twitter)",
     description: "X est un réseau social où de nombreux experts, entreprises et journalistes partagent des informations en temps réel. Il est efficace pour repérer les nouveautés, annonces et discussions autour des technologies en suivant des hashtags ou des comptes spécialisés.",
-    link: "https://mention.com/",
+    link: "https://x.com/?lang=fr",
   },
 ];
 
@@ -34,7 +34,7 @@ function Outils() {
   return (
     <div className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
       <h1 className={`${alfa.className} text-5xl mb-12 text-center`}>
-        🛠️ Outils de Veille Technologique
+        🛠️ Outils de Veille 
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
