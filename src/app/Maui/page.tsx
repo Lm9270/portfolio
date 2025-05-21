@@ -52,7 +52,7 @@ export default function Page() {
             <div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Compétences mobilisées</h3>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>S'autoformer</li>
+                <li>S&apos;autoformer</li>
                 <li>Travailler en mode projet</li>
               </ul>
             </div>
